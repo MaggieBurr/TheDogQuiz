@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dog Quiz</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="box">
+    <header role="banner">
+      <div class= "title">
+        <h1>Dog Quiz</h1>
+      </div>
+      <div class= "number-tracker">
+        <ul>
+          <li>Question: <span class="question-number">0</span<>/10
+          </li>
+          <li>Score: <span class="score-number">0</span>
+          </li>
+        </ul>
+     </div>     
+    </header>
+    <main role="start-page">
+      <div class="quiz-start">
+        <h2> How well do you know a man's best friend?</h2>
+        <button type="button" class="start-button">Click here to find out</button>
+      </div>
+    </div>
+    </main>
+    <!-- JS Render Page -->
+      <div class="questionAnswerForm">
+        <form name="quiz-form">
+          <div class="container">
+          <h3>What part of the body do dogs sweat?</h3>
+            <input type="radio" name="answer" value="1">They don’t sweat at all<br>
+            <input type="radio" name="answer" value="2">paws<br>
+            <input type="radio" name="answer" value="3">mouth<br>
+            <input type="radio" name="answer" value="4">armpits<br><br>
+            <input type="submit" value="submit">
+          </div>
+          <div class="container">
+          <h3>At what age is a puppy ready to be adopted?</h3>
+            <input type="radio" name="answer" value="1">3 months<br>
+            <input type="radio" name="answer" value="2">6 weeks<br>
+            <input type="radio" name="answer" value="3">8 weeks<br>
+            <input type="radio" name="answer" value="4">2.5 months<br><br>
+            <input type="submit" value="submit">
+           </div> 
+
+           <div class="container">  
+           <h3>What are the names of President Obama's dogs?</h3>
+            <input type="radio" name="answer" value="1">Bo and Mo<br>
+            <input type="radio" name="answer" value="2">The Obamas only have one dog named Bo<br>
+            <input type="radio" name="answer" value="3">Maggie and Max<br>
+            <input type="radio" name="answer" value="4">Bo and Sunny<br><br>
+            <input type="submit" value="submit">
+          </div>
+
+          <div class="container">  
+          <h3>In the movie Air Bud, what was the dogs and his breed?</h3>
+            <input type="radio" name="answer" value="1">Bud--Labrador Retriever<br>
+            <input type="radio" name="answer" value="2">Buddy--Golden Retriever<br>
+            <input type="radio" name="answer" value="3">Buster--St. Bernard<br>
+            <input type="radio" name="answer" value="4">Bo--Poodle<br><br>
+            <input type="submit" value="submit">
+          </div>
+
+          <div class="container">  
+          <h3>What are dogs most closely related to?</h3>
+            <input type="radio" name="answer" value="1">wolves<br>
+            <input type="radio" name="answer" value="2">bears<br>
+            <input type="radio" name="answer" value="3">coyotes<br>
+            <input type="radio" name="answer" value="4">horses<br><br>
+            <input type="submit" value="submit">
+          </div>
+
+          <div class="container">  
+          <h3>The Queen of England’s favorite dog breed?</h3>
+            <input type="radio" name="answer" value="1">pomeranian<br>
+            <input type="radio" name="answer" value="2">labrador retriever<br>
+            <input type="radio" name="answer" value="3">corgi<br>
+            <input type="radio" name="answer" value="4">poodle<br><br>
+            <input type="submit" value="submit">
+          </div>  
+
+          <div class="container">           
+          <h3>What is the most popular breed of dog<br> according to the American Kennel Club’s registrations?</h3>
+            <input type="radio" name="answer" value="1">Golden Retriever<br>
+            <input type="radio" name="answer" value="2">Beagle<br>
+            <input type="radio" name="answer" value="3">German Shephard<br>
+            <input type="radio" name="answer" value="4">Labrador<br><br>    
+            <input type="submit" value="submit">
+          </div>
+
+          <div class="container">
+          <h3>What breed is Scooby Doo?</h3>
+            <input type="radio" name="answer" value="1">Dalmation<br>
+            <input type="radio" name="answer" value="2">German Shephard<br>
+            <input type="radio" name="answer" value="3">Great Dane<br>
+            <input type="radio" name="answer" value="4">English Mastiff<br><br>
+            <input type="submit" value="submit">
+          </div>
+
+          <div class="container">
+          <h3>Where is the breed "Australian Shepherd" from?</h3>
+            <input type="radio" name="answer" value="1">Japan<br>
+            <input type="radio" name="answer" value="2">United States<br>
+            <input type="radio" name="answer" value="3">Australia<br>
+            <input type="radio" name="answer" value="4">Canada<br><br>
+            <input type="submit" value="submit">
+          </div>
+
+          <div class="container">
+          <h3>What is the largest breed?</h3>
+            <input type="radio" name="answer" value="1">Great Dane<br>
+            <input type="radio" name="answer" value="2">Irish Wolfhound<br>
+            <input type="radio" name="answer" value="3">St. Bernard<br>
+            <input type="radio" name="answer" value="4">English Mastiff<br><br>
+            <input type="submit" value="submit">
+          </div>  
+      </div>
+      <!-- correct answer page -->
+      <section class="answer-page">
+        <h1>Correct!<br><span class="correct-answer">${correctAnswer}</span><br></h1>
+        <button class="submit-button">next</button>
+      </section>  
+      <!--wrong answer page -->
+      <section class="answer-page">
+        <h1>Wrong. The Answer is: <br><span class="correct-answer">${correctAnswer}</span></h1>
+        <button class="submit-button">next</button>
+        </section>
+      <!-- results page -->
+      <section class="answer-page">
+        <h1>You scored: <br><span class="score-number">${scoreNumber}</span>/10</h1>
+        <button>Give it another try!</button>
+      </section>
+
+  </body>
+</html>
