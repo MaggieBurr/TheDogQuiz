@@ -1,47 +1,48 @@
 
 body {
-    background: grey;
-   }
-   
-   .title {
-     text-align: center;
-     font-size: 10px;
-     position: absolute;
-     color: white;
-     top: -25px; 
-     left: 42%;
-     right: 40%; 
-     background:grey;
-     width: 95px;
-     height: 35px;
-   }
-   
-   ul {
-     list-style: none;
-     color: white;
-   }
-   
-   li {
-     margin-right: 35px;
-     text-align: center;
-   }
-   
-   .quiz-start{
-     text-align: center;
-     color: white;
-   }
-   .box, .container, .answer-page {
-     width: 600px;
-     height: 300px;
-     position: relative;
-     border: 1px solid white;
-     margin-left: auto;
-     margin-right: auto;
-   }
-   
-   .start-button {
-     border: none;
-     color: rgba(241, 175, 189, 0.87);
-     background-color:grey;
-     border-radius: 25px;
-   }
+ background: grey;
+}
+
+.headline {
+  text-align: center;
+  font-size: 10px;
+  position: absolute;
+  color: white;
+  top: -25px; 
+  left: 42%;
+  right: 40%; 
+  background:grey;
+  width: 95px;
+  height: 35px;
+}
+
+ul {
+  list-style: none;
+  color: white;
+}
+
+li {
+  margin-right: 35px;
+  text-align: center;
+}
+
+.quiz-start{
+  text-align: center;
+  color: white;
+}
+.container, .answer-page {
+  width: 600px;
+  height: 300px;
+  position: relative;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.start-button {
+  border: none;
+  color: rgba(241, 175, 189, 0.87);
+  background-color:grey;
+  border-radius: 25px;
+}
+
